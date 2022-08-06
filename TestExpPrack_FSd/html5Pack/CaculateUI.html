@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Calculator</title>
+    <script src="../nodeWithJSPack/calculateOpsApp.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+
+<body background-color="#d6d4ce">
+    <div class="container pt-5 mt-5 pb-5" align="center">
+        <div class="card border-5 rounded-3 border-success" style="max-width: 35rem;">
+            <form action="#" target="_self" name="computeOpsExp" method="post">
+                <div class="card-header ps-3 pe-3 pt-3" align="left">
+                    <p><input type="text" class="form-control" name="inpTxtValue" id="getTxtId"
+                            style="height:110px;background-color:#464746;color:#f5f7f6"></p>
+                </div>
+                <div class="d-flex">
+                    <div class="p-2 flex-fill border broder-dark-black"><button class="bg-info btn btn-lg text-white"
+                            type="button" value="*">*</button></div>
+                    <div class="p-2 flex-fill border broder-dark-black"><button class="bg-info btn btn-lg text-white"
+                            type="button" value="/">/</button></div>
+                    <div class="p-2 flex-fill border broder-dark-black"><button class="bg-info btn btn-lg text-white"
+                            type="button" value="-">-</button></div>
+                    <div class="p-2 flex-fill border broder-dark-black"><button class="bg-info btn btn-lg text-white"
+                            type="button" value="+">+</button></div>
+                </div>
+                <div class="d-flex">
+                    <div class="p-2 flex-fill border border-light-black"><button class="btn btn-lg" type="button"
+                            value=".">.</button></div>
+                    <div class="p-2 flex-fill border border-light-black"><button class="btn btn-lg" type="button"
+                            value="9">9</button></div>
+                    <div class="p-2 flex-fill border border-light-black"><button class="btn btn-lg" type="button"
+                            value="8">8</button></div>
+                    <div class="p-2 flex-fill border border-light-black"><button class="btn btn-lg" type="button"
+                            value="7">7</button></div>
+                </div>
+                <div class="d-flex">
+                    <div class="p-2 flex-fill border border-light-black"><button class="btn btn-lg" type="button"
+                            value="6">6</button></div>
+                    <div class="p-2 flex-fill border border-light-black"><button class="btn btn-lg" type="button"
+                            value="5">5</button></div>
+                    <div class="p-2 flex-fill border border-light-black"><button class="btn btn-lg" type="button"
+                            value="4">4</button></div>
+                    <div class="p-2 flex-fill border border-light-black"><button class="btn btn-lg" type="button"
+                            value="3">3</button></div>
+                </div>
+                <div class="d-flex">
+                    <div class="p-2 flex-fill border border-light-black"><button class="btn btn-lg" type="button"
+                            value="2">2</button></div>
+                    <div class="p-2 flex-fill border border-light-black"><button class="btn btn-lg" type="button"
+                            value="1">1</button></div>
+                    <div class="p-2 flex-fill border border-light-black"><button class="btn btn-lg" type="button"
+                            value="0">0</button></div>
+                    <div class="p-2 flex-fill border border-light-black"><button class="bg-danger btn btn-lg"
+                            type="reset" value="C" onclick="allCrearOpsBtnClick();">C</button></div>
+                </div>
+                <div class="d-flex">
+                    <div class="p-2 flex-fill">
+                        <div class="d-grid gap-1 ps-3 pe-3 pt-3 pb-3">
+                            <button type="submit" class="btn btn-success" value="="
+                                style="font-size:30px;color:#464746;" onclick="return opsEqualSubmitBtnClick();">=</button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
