@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal-Portfolio</title>
+    <style>
+        * {
+          box-sizing: border-box;
+        }
+        
+        body {
+          font-family: Arial, Helvetica, sans-serif;
+        }
+        
+        /* Style the header */
+        header {
+          background-color: #666;
+          padding: 5px;
+          text-align: left;
+          font-size: 20px;
+          color: white;
+        }
+        
+        /* Create two columns/boxes that floats next to each other */
+        nav {
+          float: left;
+          width: 70%;
+          height: 220px; /* only for demonstration, should be removed */
+          background: #ccc;
+          padding: 20px;
+        }
+        
+        /* Style the list inside the menu */
+        nav ul {
+          list-style-type: square;
+          padding: 10px;
+        }
+        
+        article {
+          float: left;
+          padding: 20px;
+          width: 70%;
+          background-color: #f1f1f1;
+          height: 200px; /* only for demonstration, should be removed */
+        }
+        
+        /* Clear floats after the columns */
+        section::after {
+          content: "";
+          display: block;
+          clear: both;
+        }
+        
+        /* Style the footer */
+        footer {
+          background-color: burlywood;
+          padding: 0.5px;
+          text-align: center;
+          color: cornsilk;
+        }
+        
+        </style>
+</head>
+<body>
+    <header>
+        <img src="data:image/jpeg;base64,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"
+        height="160" width="160"
+        alt="Error!!"
+        />
+        <br>
+        <h3>Abhinay Lunawat</h3>
+        <h6>Mobile   :+91-9566089853</h6>
+        <h6>Email-Id : abhinaylunawat5993@gmail.com</h6>
+    </header>
+
+      <section>
+        <article>
+          <h1>CAREER OBJECTIVE</h1>
+          <p>Enthusiastic Java Full Stack Developer.With 4+ Years Experience in QA-Automation SDET role.</p>
+          <p>
+            Proficient in designing and implementing
+            projects based on Core Java, HTML5 , CSS3 , BootStrap 5 , JavaScript , TestNg , Maven ,
+            Selenium , MySQL , problem solving ability along with good interpersonal relationship
+            skill and a flexible and adaptable personality, seeking a position in Java backend , Full
+            Stack domain with an esteemed organization where I can learn new things and utilize my
+            skills and experience in the growth of organization and myself.
+          </p>
+        </article>
+      </section>
+
+    <nav>
+        <h1>TECHNICAL SKILLS</h1>
+        <ul>
+          <li>Core Java</li>
+          <li>My SQL</li>
+          <li>Maven</li>
+          <li>HTML5 , CSS3 , BootStrap 5 ,JavaScript</li>
+          <li>React JS</li>
+          <li>GIT</li>
+        </ul>
+    </nav>
+
+      <section>
+        <article>
+          <h1>PROJECTS</h1>
+          <p><b>Project 1 - PyTest UI Automation Framework.</b></p>
+          <p>
+            Python Test Automation Framework with PyTest to perform functional UI
+            Automation for Web application and generate extent execution logs and report.
+          </p>
+          <p><b>Project 2 - Android Risk Score App.</b></p>
+          <p>
+            Programming Compute rule based vulnerability check-up of android installed app into
+            devices based on Android , Java , XML , SQLite.
+          </p>
+        </article>
+      </section>
+
+      <footer>
+        <p>
+        <a href="https://twitter.com/abhinay_lunawat" rel="nofollow"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/twitter.svg" alt="abhinay_lunawat" height="30" width="40" style="max-width: 100%;"></a>
+        <a href="https://linkedin.com/in/abhinay-lunawat-257887a3" rel="nofollow"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="abhinay-lunawat-257887a3" height="30" width="40" style="max-width: 100%;"></a>
+        <a href="https://fb.com/abhinayl5993" rel="nofollow"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/facebook.svg" alt="abhinayl5993" height="30" width="40" style="max-width: 100%;"></a>
+        <a href="https://github.com/abhinay5993" rel="nofollow"><img align="center" src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" alt="abhinaylunawat" height="30" width="40" style="max-width: 100%;"></a>
+        </p>
+      </footer>
+</body>
+</html>
