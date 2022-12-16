@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EMS-CardLayout</title>
+</head>
+
+<body>
+    <div class="d-flex justify-content-center">
+        <h2>Employee Details</h2><br>
+        <br>
+    </div>
+    <div class="table-responsive">
+        <table class="table table-bordered table-striped border border-dark border-4">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>FirstName</th>
+                    <th>LastName</th>
+                    <th>Designation</th>
+                    <th>Mobile</th>
+                    <th>Email</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let arryItem of getEmpData()">
+                    <td>{{arryItem.id}}</td>
+                    <td>{{arryItem.firstName}}</td>
+                    <td>{{arryItem.lastName}}</td>
+                    <td>{{arryItem.designation}}</td>
+                    <td>{{arryItem.mobileNo}}</td>
+                    <td>{{arryItem.email}}</td>
+                    <td>
+                        <button type="button" class="btn btn-warning">Edit</button>&nbsp;&nbsp;
+                        &nbsp;&nbsp;<button type="button" class="btn btn-danger">Delete</button>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <br>
+    <div>
+        <div *ngIf="num%2==0">
+            <p>Even Number</p>
+        </div>
+        <div class="mb-3">
+            <label for="exampleInputEmail1" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" #email>
+            <button type="submit" class="btn btn-primary" (click)="showDataIntoAlert(email)">Submit</button>
+        </div>
+        <div class="mb-3">
+            <input type="color" (change)="setColour(col)" #col />
+            <input type="range" min="10" max="72" (change)="setSize(siz)" #siz />
+            <br>
+            <h4 [ngStyle]="{color:colorName,'font-size.px':size}">
+                <label for="floatingInput">Change this Colour+Size</label>
+            </h4>
+        </div>
+    </div>
+</body>
+
+</html>
