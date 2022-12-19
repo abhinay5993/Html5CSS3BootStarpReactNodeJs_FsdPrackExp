@@ -9,6 +9,7 @@
 # Node
 /TestExpPrack_FSd/node_modules
 /TestExpPrack_FSd/demoTestAnguProj/node_modules
+/TestExpPrack_FSd/test_first_react_app/node_modules
 npm-debug.log
 yarn-error.log
 
