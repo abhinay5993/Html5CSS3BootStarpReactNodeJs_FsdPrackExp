@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inline JS Exp</title>
+    <script type="text/javascript">
+        console.log("Welcome JS world!");
+        alert("Hello JS : "+new Date());
+    </script>
+</head>
+
+<body>
+    <h4>Test with Inline JS+HTML</h4>
+    <p id="idp1">This is first Inline JS Test!!</p>
+    <p id="appIdp2">Add Inline JS code snippets into both 'head' and end of 'body' tags</p>
+    <p id="idp13"></p>
+    <script type="text/javascript">
+        document.body.style.backgroundColor="yellow";
+        document.body.style.fontSize="30px";
+        document.getElementById('appIdp2').style.fontStyle="bold";
+        console.log("I am at the end of Body");
+        alert("JS at end of Body!! My Task is done!!..");
+        document.getElementById('appIdp2').innerHTML="This is with Inner HTML+JS";
+        document.getElementById("idp13").innerText="I am Set By Namestey!! JavaScripts!..";
+        document.getElementById('idp1').style.color="blue";
+    </script>
+</body>
+</html>

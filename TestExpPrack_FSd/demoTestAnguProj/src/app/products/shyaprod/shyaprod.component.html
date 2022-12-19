@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Child-2</title>
+</head>
+
+<body>
+    <b>
+        <p>This is shyaprod component-Shaya</p>
+    </b><br>
+    <section class="sample-app-content">
+        <h1>Reactive Form Example:</h1>
+        <form [formGroup]="form" (ngSubmit)="onSubmit()">
+            <p>
+                <label>First Name:</label>
+                <input type="text" formControlName="firstName">
+            </p>
+            <p>
+                <label>Password:</label>
+                <input type="password" formControlName="password">
+            </p>
+            <p>
+                <button type="submit" [disabled]="!form.valid">Submit</button>
+                <button (click)="reset()">Reset</button>
+            </p>
+        </form>
+    </section>
+</body>
+
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reactive-SignUp</title>
+</head>
+<body>
+        <div class="shadow bg-body rounded card position-absolute start-45 ps-5 ms-5 pe-3 me-5 pt-2 mt-2" style="max-width: 20rem;">
+            <div class="card-body text-success">
+            <div class="card-header">Reactive SignUp</div><br>
+                    <form [formGroup]="form" (ngSubmit)="setRegisterDataValueIntoLSOfBrowser()">
+                        <p>
+                            <label>Email-Id :</label>
+                            <input type="email" formControlName="emailId">
+                        </p>
+                        <p>
+                            <label>Mobile No :</label>
+                            <input type="tel" formControlName="mobile">
+                        </p>
+                        <p>
+                            <label>Password:</label>
+                            <input type="password" formControlName="pwd">
+                        </p>
+                        <p>
+                            <label>Confirm Password:</label>
+                            <input type="password" formControlName="confPwd">
+                        </p>
+                        <div class="card-footer bg-transparent border-success">
+                            <p>
+                                <button class="reg_btn" type="submit" [disabled]="!form.valid">SignUp</button>&nbsp;|
+                                &nbsp;<button (click)="reset()">Reset</button>&nbsp;<br>
+                                &nbsp;<br>Already a User?&nbsp;<button class="login_btn" routerLink="/reactive-signin">SignIn</button><br>
+                                &nbsp;<p>{{regState}}
+                            </p>
+                        </div>
+                    </form>
+              </div>
+        </div>
+</body>
+</html>

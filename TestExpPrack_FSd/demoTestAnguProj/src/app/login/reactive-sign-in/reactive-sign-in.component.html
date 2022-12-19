@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reactive-LogIn</title>
+</head>
+<body>
+    <div class="hadow bg-body rounded card position-absolute start-45 ps-5 ms-5 pe-3 me-5 pt-2 mt-2" style="max-width: 20rem;">
+        <div class="card-body text-denger">
+        <div class="card-header">Reactive SignIN</div><br>
+                <form [formGroup]="form" (ngSubmit)="authenticateSignInUser()">
+                    <p>
+                        <label>Email-Id :</label>
+                        <input type="email" formControlName="emailId">
+                    </p>
+                    <p>
+                        <label>Password:</label>
+                        <input type="password" formControlName="pwd">
+                    </p>
+                    <div class="card-footer bg-transparent border-success">
+                        <p>
+                            <button type="submit" class="lgp_logBtn" [disabled]="!form.valid">LogIN</button>&nbsp;|
+                            &nbsp;<button (click)="reset()">Reset</button>&nbsp;<br>
+                            <br>Not a registered User?&nbsp;<button class="lgp_regBtn" routerLink="/">SignUp</button>
+                            &nbsp;<p>{{logState}}
+                        </p>
+                    </div>
+                </form>
+          </div>
+    </div>
+</body>
+</html>
