@@ -1,0 +1,9 @@
+.listItems {
+    text-decoration: none;
+}
+
+#tdLeft { 
+    width: 14%; 
+    padding-bottom: 50%;
+    padding-top: 30px;
+}

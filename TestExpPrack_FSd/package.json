@@ -1,6 +1,14 @@
 {
-  "dependencies": {
-    "global": "^4.4.0",
-    "tar": "^6.1.11"
-  }
+  "name": "testexpprack_fsd",
+  "version": "1.0.0",
+  "description": "This is fullstack nodeJs+with HTML.CSS projects",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "NodeJSprojects"
+  ],
+  "author": "abhinayl",
+  "license": "UNLICENSED"
 }
