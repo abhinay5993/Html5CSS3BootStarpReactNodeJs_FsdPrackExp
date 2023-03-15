@@ -45,3 +45,17 @@ stuWithObj.key2=-203.0034
 stuWithObj.key3="testing with Object()"
 stuWithObj.key4=-0.99
 console.log("Play with Object() : "+stuWithObj.key4);
+console.log("Create Object using function constructor :");
+function consFunc(eId,eName,eAdd)
+{
+    this.eId=eId;
+    this.eName=eName;
+    this.eAdd=eAdd;
+    console.log("After func constructor");
+}
+
+e1Obj=new consFunc(202,"AbhinayL",-3049);
+e1Obj1=new consFunc(20,"aitf","KNK,Chennai");
+
+console.log("Object of 2nd employee : "+e1Obj1.eName);
+console.log("Full object Object of 1st employee : "+e1Obj.eAdd);
