@@ -1,3 +1,5 @@
+"use strict";
+exports.__esModule = true;
 var numx;
 var boolItem;
 var strDat;
@@ -6,3 +8,5 @@ numx = 20.0033;
 var fx = function () { return "Hello TypeScripting!! worlds.." + numx; };
 console.log(fx());
 console.log("\nprint arr : " + car);
+console.log("\nFor Continusly comple code type script command : tsc typescriptApp.ts -watch");
+console.log("\nexport{} used to remove all erros from TS file");

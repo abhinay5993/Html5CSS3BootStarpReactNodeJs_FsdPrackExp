@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOM</title>
+</head>
+<body>
+    <h3>Play with JS BOM- Browser Object Model</h3>
+    <!-- <script>
+        function getConfUsingBom()
+        {
+            let val=confirm("Are you single ?")
+            if(val==true)
+            {
+                alert('Get Well Soon!!..')
+            }
+            else
+            {
+                alert('Congrates!!...')
+            }
+        }
+    </script> -->
+        <!-- <script>
+            function getPromtedByBrowser()
+            {
+             let ag=parseInt(prompt('Enter your Age : '))
+             if(ag>18)
+             {
+                let gen=prompt('Enter Gender : ')
+
+                if(gen=='F')
+                {
+                    confirm('Good for Marry!!..')
+                    history.back();
+                    close();
+                }
+                else
+                {
+                    document.write("using Navigator App Name: "+navigator.appName());
+                    document.write("using Code : "+navigator.appCodeName());
+                    document.write("using app version : "+navigator.appVersion());
+                    confirm('Plese go for Higher Study!!..');
+                    //history.go(2);
+                }
+             }
+             else{
+                confirm('Invalid Age!!..')
+             }
+             
+            }
+        </script> -->
+    <!-- <input type="button" value="get-Confirmation" onclick="getConfUsingBom()">
+    <br>
+    <hr> -->
+    <script>
+        function getTotalItems()
+        {
+            var tagCt=document.getElementsByTagName('p');
+            var val1;
+            //=document.getElementsByName('gen');
+            confirm('Total No of Radio buttons : '+val1.length);
+            for(i=0;i<val1.length;i++)
+            {
+                if(val1[i].checked)
+                {
+                    document.writeln("Check Items : "+val1[i].value);
+                }
+            }
+            document.writeln("<br>Paragraph Count of p : "+tagCt.length);
+        }
+    </script>
+    <p>Hey!! para1 </p>
+    <p>Hey!! testing para2</p>
+    <p>Hey!! osuh test!</p>
+    <form>
+        Male : <input type="radio" value="M" name="gen">
+        Female : <input type="radio" value="F" name="gen">
+        Other : <input type="radio" value="Trans" name="gen">
+        <input type="button" value="Hit-Promter" onclick="getTotalItems()">
+    </form>
+</body>
+</html>

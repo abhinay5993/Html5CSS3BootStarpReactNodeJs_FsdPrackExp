@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reg-Form</title>
+</head>
+<body>
+    <script>
+        function setTableDtItems()
+        {
+            let uNameArr=document.getElementById('userNm');
+            let emlIdArr=document.getElementById('emaiId');
+            let mobArr=document.getElementById('mobNum');
+            let genVal=document.getElementsByName('gen');
+            document.getElementById('unName').innerHTML=uNameArr.value;
+            document.getElementById('eml').innerHTML=emlIdArr.value;
+            document.getElementById('mob').innerHTML=mobArr.value;
+            for(let i=0;i<genVal.length;i++)
+            {
+                if(genVal[i].checked)
+                {
+                    document.getElementById('sx').innerHTML=genVal[i].value;
+                }
+            }
+
+        }
+    </script>
+    <form>
+        Name : <input type="text" id="userNm"><br>
+        EmailId : <input type="email" id="emaiId"><br>
+        Mobile : <input type="tel" id="mobNum"><br>
+        <p>Gender</p>
+        Male : <input type="radio" value="M" name="gen">
+        Female : <input type="radio" value="F" name="gen">
+        Other : <input type="radio" value="Trans" name="gen">
+        <input type="button" value="Register" onclick="setTableDtItems()">
+    </form>
+    <br>
+    <hr>
+    <table border="1">
+        <tr>
+            <th>Name</th>
+            <th>EmailId</th>
+            <th>MobileNo</th>
+            <th>Gender</th>
+        </tr>
+        <tr>
+            <td id="unName"></td>
+            <td id="eml"></td>
+            <td id="mob"></td>
+            <td id="sx"></td>
+        </tr>
+    </table>
+</body>
+</html>
