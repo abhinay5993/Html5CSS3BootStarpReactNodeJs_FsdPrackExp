@@ -1,0 +1,10 @@
+<p><u>templet-test-driven-form works!</u></p>
+<form #lgFormDat="ngForm" (ngSubmit)="doLogInByUnamePass(lgFormDat)">
+<label for="un">Enter UserName : </label> <input type="text" name="unName" #unName="ngModel" required minlength="3" maxlength="8" ngModel><br>
+<div *ngIf="unName && unName.touched && unName.invalid" style="color:red">Invalid!! userName!!..</div>
+<br>
+<label for="pwd">Enter Password :</label> <input type="password" name="pwd" #pwd="ngModel" required minlength="4" maxlength="10" ngModel><br>
+<div *ngIf="pwd && pwd.touched && pwd.invalid" style="color:red">Invalid!! Password..</div>
+<br>
+<input type="submit" value="Sign-In">
+</form>

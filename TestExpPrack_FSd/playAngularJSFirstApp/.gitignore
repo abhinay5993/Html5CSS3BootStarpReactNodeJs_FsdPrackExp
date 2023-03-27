@@ -1,17 +1,13 @@
 # See http://help.github.com/ignore-files/ for more about ignoring files.
 
 # Compiled output
-/TestExpPrack_FSd/demoTestAnguProj/dist
-/TestExpPrack_FSd/playAngularJSFirstApp/dist
+/dist
 /tmp
 /out-tsc
 /bazel-out
 
 # Node
-/TestExpPrack_FSd/node_modules
-/TestExpPrack_FSd/demoTestAnguProj/node_modules
-/TestExpPrack_FSd/playAngularJSFirstApp/node_modules
-/TestExpPrack_FSd/test_first_react_app/node_modules
+/node_modules
 npm-debug.log
 yarn-error.log
 
@@ -25,8 +21,7 @@ yarn-error.log
 *.sublime-workspace
 
 # Visual Studio Code
-/TestExpPrack_FSd/demoTestAnguProj/.vscode/*
-/TestExpPrack_FSd/playAngularJSFirstApp/.vscode/*
+.vscode/*
 !.vscode/settings.json
 !.vscode/tasks.json
 !.vscode/launch.json
@@ -34,8 +29,7 @@ yarn-error.log
 .history/*
 
 # Miscellaneous
-/TestExpPrack_FSd/demoTestAnguProj/.angular/cache
-/TestExpPrack_FSd/playAngularJSFirstApp/.angular/cache
+/.angular/cache
 .sass-cache/
 /connect.lock
 /coverage

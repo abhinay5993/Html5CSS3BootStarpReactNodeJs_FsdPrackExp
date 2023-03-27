@@ -1,0 +1,15 @@
+npm install -g @angular/cli --> Angular CLI instllation command.
+
+ng version  --> check Angular CLI installation version.
+
+ng new <project-name> --> create new Angular project.
+
+ng s or [ ng serve ] --> Run the Angular project.
+
+ng g c <component-name> || ng generate component <componet-name> ---> generate component.
+
+ng g s <services-class-name> || ng generate service <services-class-name>  ---> generate new service.
+
+npx kill-port <port Number>  --> kill an existing port which is running.
+
+
