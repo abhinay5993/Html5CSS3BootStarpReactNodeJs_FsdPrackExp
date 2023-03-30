@@ -1,3 +1,10 @@
+https://unsplash.com/
+https://www.pexels.com/
+https://startbootstrap.com/
+https://mdbootstrap.com/docs/standard/extended/login/
+============================
+Angular + BootStarp Commands
+============================
 npm install -g @angular/cli --> Angular CLI instllation command.
 
 ng version  --> check Angular CLI installation version.
@@ -12,4 +19,21 @@ ng g s <services-class-name> || ng generate service <services-class-name>  ---> 
 
 npx kill-port <port Number>  --> kill an existing port which is running.
 
+npm install bootstrap --> install bootstrap into Angular project.
 
+npm install jquery --> install jquery into Angular project.
+
+update your Angular.js file under the scripting [ "bootstreap.min.js", --> relative path ] , styles[ "bootstrap.min.css" --> relative path] of section.
+
+update your styles.css with copied/required css code inorder to use along with BootStarp.
+
+ng init --routing  --> if during new angular project initialization routing moudule is not activate then we can activate it using this command.
+
+Create Angualr App with:
+========================
+SignUp --> pop-details into array from services class.
+login  ---> validate using static hardcoded values.
+showdetails --> show data in grate pro manner of registration.
+adding routing logic
+
+ng g g <guard-name>   || ng generate guard <guarad-name> --> generate auth guard.

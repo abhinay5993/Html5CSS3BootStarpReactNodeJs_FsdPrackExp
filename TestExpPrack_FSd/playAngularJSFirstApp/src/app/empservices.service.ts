@@ -5,6 +5,7 @@ import { Injectable } from '@angular/core';
 })
 export class EmpservicesService {
 
+  regUsersDetails:any[] = [ {unName:101,unEmailId:"CaratLane",newPwd:45000,confPwd:"test"} ];
   arrDataItems:any[] =[];
   empServArr:any[] = [ {empId:101,empName:"CaratLane",empSal:45000}, 
                     {empId:102,empName:"ITC",empSal:387484},
@@ -36,5 +37,16 @@ export class EmpservicesService {
     return this.arrDataItems;
   }
 
+  putUserRegisterDetailsToArrayStore(user1:any)
+  {
+    this.regUsersDetails.push(user1);
+  }
+
+  getRegisteredUsersDetails()
+  {
+    return this.regUsersDetails;
+  }
+
   constructor() { }
+
 }
