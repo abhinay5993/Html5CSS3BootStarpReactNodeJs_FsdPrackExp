@@ -8,4 +8,4 @@ this git repo is from testing and experimenting for full stack/backend dev
 7. JavaScript
 8. NodeJS
 9. MongoDB / MySQL DB
-10. AngularJS
+10. Angular
