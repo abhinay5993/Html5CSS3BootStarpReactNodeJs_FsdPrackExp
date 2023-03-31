@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom-Componet</title>
+</head>
+<body>
+<p>This is part of Cust-comp-Emp!!.. components.</p>
+<h3>Access the Number : {{numDat}}</h3>
+<h3>Access Single String : {{pushStr}}</h3>
+<br>
+<h4><u>Print The Table with Array</u></h4>
+<button type="button" (click)="getUpdateArrayData()">View-ArrayData</button>
+<table border="1">
+    <tr>
+        <th>Array Data</th>
+    </tr>
+    <tr *ngFor="let datItems of simpArrayStat">
+        <td>
+            {{datItems}}
+        </td>
+    </tr>
+</table>
+<br>
+<table border="1">
+       <tr>
+        <th>Array1 Data</th>
+        <td *ngFor="let emp1Obj of empArr1">
+            {{emp1Obj.empId}}
+            {{emp1Obj.empName}}
+            {{emp1Obj.empSal}}
+        </td>
+        </tr>
+        <tr>
+        <th>Array2 Data</th>
+        <td *ngFor="let emp2Obj of empArr2">
+            {{emp2Obj.empId}}
+            {{emp2Obj.empName}}
+            {{emp2Obj.empSal}}
+        </td>
+       </tr>
+</table>
+<br>
+<h3><u>Using Service Class Data Access</u></h3>
+<button type="button" value="getEmpServ" (click)="printDataOfArray()">Click-on-Button</button>
+<table border="1">
+        <tr>
+            <th>EmpID</th>
+            <th>EmpName</th>
+            <th>EmpSal</th>
+        </tr>
+        <tr *ngFor="let serv1 of empDataArr1">
+        <td>
+            {{serv1.empId}}
+        </td>
+        <td>
+            {{serv1.empName}}
+        </td>
+        <td>
+            {{serv1.empSal}}
+        </td>
+       </tr>
+</table>
+<h3><u>Using Service Class Product Details</u></h3>
+<button type="button" value="getEmpServ" (click)="printProductDetails()">Get-ListOf-Products</button>
+<table border="1">
+        <tr>
+            <th>ProductId</th>
+            <th>Product-Name</th>
+            <th>Price</th>
+        </tr>
+        <tr *ngFor="let prodObj of productArr1">
+        <td>
+            {{prodObj.sku}}
+        </td>
+        <td>
+            {{prodObj.prodName}}
+        </td>
+        <td>
+            {{prodObj.price}}
+        </td>
+       </tr>
+</table>
+<hr>
+<form #loc1="ngForm" (ngSubmit)="updateArrayData(loc1)">
+    <input type="text" name="Location" ngModel>
+    <input type="submit" value="AddLocation"> 
+ </form>
+ <br>
+</body>
+</html>
