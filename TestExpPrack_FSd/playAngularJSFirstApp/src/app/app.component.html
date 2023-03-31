@@ -41,6 +41,44 @@
             </div>
         </div>
       </nav>
+      <h3>Original Date before Pipes for Date : {{strDate}}</h3>
+      <h4>Original Date After Pipes for Date : {{strDate|date|uppercase}}</h4>
+      <h4>String before pipe : {{strVarx}}</h4>
+      <h4>String After lowercase pipe : {{strVarx|lowercase}}</h4>
+      <h4>String After Slice pipe by 4 : {{strVarx|slice:4}}</h4>
+      <h4>Number1 before pipe : {{numVar}}</h4>
+      <h4>Number2 before pipe : {{negVar}}</h4>
+      <h4>Number3 before pipe : {{curencyVarX}}</h4>
+      <h4>Currency Number before pipe : {{perCentVarx}}</h4>
+      <h4>Number1 After pipe : {{numVar|number}}</h4>
+      <h4>Number2 After pipe : {{negVar|number:'4.1-5'}}</h4>
+      <h4>Number3 After pipe : {{curencyVarX|currency:'INR'}}</h4>
+      <h4>Number3 After pipe : {{curencyVarX|currency}}</h4>
+      <h4>Currency Number After pipe : {{perCentVarx|percent:'1.2-2'}}</h4>
+      <h4>Transfrom Data using Custom pipe on string : {{strVarx|reversetestcustpipe}}</h4>
       <router-outlet></router-outlet>
+      <hr>
+      <h1 [innerText]="propVarfromCompTs"></h1>
+      <h4>Example of property Binding : </h4>
+      <button [disabled]="switchFlagVar">I am disabled!!</button>
+      <hr>
+      <h3>using ngModel 2 way data+property bindings:</h3>
+      <input type="text" name="val1" [(ngModel)]="twoTsWayValx">
+      <p>You have entered the value : {{twoTsWayValx}}</p>
+      <button (click)="doClearVal()">Push-For-Clear</button>
+      <br>
+      <hr>
+      <h3 [ngStyle]="{'color':'green','font-size':'50px'}">ngSwitch strutural and [ngStyle] Attribute directive</h3>
+      <input type="text" name="val1" [(ngModel)]="switchTestExprVal">
+      <div [ngSwitch]="switchTestExprVal">
+        <p *ngSwitchCase="1">ONE</p>
+        <p *ngSwitchCase="2">Two</p>
+        <p *ngSwitchCase="3">Three</p>
+        <p *ngSwitchCase="4">Four</p>
+        <p *ngSwitchCase="5">Five</p>
+        <p *ngSwitchDefault><b>Better Luck Next Time!!</b>Wrong input!!</p>
+      </div>
+      <br>
+      <hr>
 </body>
 </html>

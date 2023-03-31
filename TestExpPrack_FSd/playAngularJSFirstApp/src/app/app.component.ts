@@ -8,6 +8,16 @@ import { FormControl, FormGroup, Validators } from '@angular/forms';
 })
 export class AppComponent {
 
+  twoTsWayValx:string | undefined;
+  propVarfromCompTs:string ="caratLane-ITC"
+  switchFlagVar:boolean = false;
+  numVar:string = "34.30400000000000000";
+  negVar:string = "-3.30";
+  curencyVarX:string = "877.88";
+  perCentVarx:string = "74.34";
+  switchTestExprVal:number | undefined;
+  strDate=new Date();
+  strVarx:string="Welcome to Pipes!!";
   lgFrm=new FormGroup({ user:new FormControl('',[Validators.required,Validators.email]),
             password:new FormControl('',[Validators.required,Validators.minLength(2),Validators.maxLength(8)])
   });
@@ -27,4 +37,8 @@ export class AppComponent {
     return this.lgFrm.get('password');
   }
 
+  doClearVal()
+  {
+    this.twoTsWayValx="0";
+  }
 }

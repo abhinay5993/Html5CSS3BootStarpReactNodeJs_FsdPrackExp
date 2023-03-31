@@ -37,3 +37,5 @@ showdetails --> show data in grate pro manner of registration.
 adding routing logic
 
 ng g g <guard-name>   || ng generate guard <guarad-name> --> generate auth guard.
+
+ng g pipe <pipe-name>  ---> to genarate a custom pipe

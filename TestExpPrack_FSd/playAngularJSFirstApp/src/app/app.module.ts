@@ -14,6 +14,7 @@ import { UserdetailsComponent } from './custbootstrscomps/userdetails/userdetail
 import { TempletdriveformsexpComponent } from './custbootstrscomps/templetdriveformsexp/templetdriveformsexp.component';
 import { ClrhomeComponent } from './routergard/clrhome/clrhome.component';
 import { MemberdetailsComponent } from './routergard/memberdetails/memberdetails.component';
+import { ReversetestcustpipePipe } from './reversetestcustpipe.pipe';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { MemberdetailsComponent } from './routergard/memberdetails/memberdetails
     UserdetailsComponent,
     TempletdriveformsexpComponent,
     ClrhomeComponent,
-    MemberdetailsComponent
+    MemberdetailsComponent,
+    ReversetestcustpipePipe
   ],
   imports: [
     BrowserModule,
