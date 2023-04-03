@@ -8,9 +8,19 @@
 </head>
 <body>
     <center>
-    <h2 style="color:green; font-size:50px;font-style:italic; font-weight:bold">I am from Parent HTML file--> Outter HTML-Doc</h2>
+    <h2 style="color:green; font-size:50px;font-style:italic;font-weight:bold;">I am from Parent HTML file--> Outter HTML-Doc</h2>
     <center>
-    <iframe style="border: 1px solid red;background-color:mediumaquamarine;" src="CaculateUI.html" height="500" width="900" title="Hold my Calculator" name="ifrm_targetVal">
+    <iframe style="border: 1px solid red;background-color:mediumaquamarine;" src="CaculateUI.html" height="500" width="900" title="Hold my Calculator">
     </iframe>
+    <hr>
+    <iframe style="border: 1px solid red;background-color:azure;" height="300" width="900" title="My IFrame ifrm_targetVal test with target attibute" name="ifrm_tarName">
+    </iframe>
+    <p><a href="https://www.edubridgeindia.com/login" target="ifrm_tarName">Edubridge Interface will get loaded inside ifrm_targetVal</a></p>
+    <hr>
+    <div>
+        <h2><u>Using sandbox attribute with Iframe</u></h2>
+        <iframe width="650" height="500" src="https://www.youtube.com/embed/LiNF4JnzBJY?list=PL8ALCSKTY-0t-02SqRDnjiDakMaPhuA79" title="Learn Binary Trees Algorithms" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"></iframe>
+        </iframe>
+    </div>
     </body>
 </html>
