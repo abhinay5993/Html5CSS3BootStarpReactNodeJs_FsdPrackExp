@@ -41,7 +41,7 @@
             </div>
         </div>
       </nav>
-      <h3>Original Date before Pipes for Date : {{strDate}}</h3>
+      <!-- <h3>Original Date before Pipes for Date : {{strDate}}</h3>
       <h4>Original Date After Pipes for Date : {{strDate|date|uppercase}}</h4>
       <h4>String before pipe : {{strVarx}}</h4>
       <h4>String After lowercase pipe : {{strVarx|lowercase}}</h4>
@@ -78,7 +78,19 @@
         <p *ngSwitchCase="5">Five</p>
         <p *ngSwitchDefault><b>Better Luck Next Time!!</b>Wrong input!!</p>
       </div>
-      <br>
+      <br> -->
       <hr>
+      <div>
+        <b>Example of ngClass</b>
+        <div ngClass="primary big">This is comming from app.component.css with ngClass configuration</div>
+      </div>
+
+      <div>
+        <b>Example of ngClass with Dynamic CSS properties</b>
+        <ul>
+          <li [ngClass]="getCssClassVal(20)">Hey!! call from DynamicCSS & app.component.ts</li>
+        </ul>
+      </div>
+
 </body>
 </html>

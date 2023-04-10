@@ -2,3 +2,26 @@ h2{
     color: rebeccapurple;
     font-size: 100px;
 }
+
+.primary
+{
+    color: green;
+    font-size: 35px;
+}
+
+.second
+{
+    color:blue;
+    font-size: 50px;
+}
+
+.big
+{
+    font-size: 50px;
+}
+
+.small
+{
+    color: red;
+    font-size: 10px;
+}

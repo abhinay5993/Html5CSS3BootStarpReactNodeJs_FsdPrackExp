@@ -41,4 +41,17 @@ export class AppComponent {
   {
     this.twoTsWayValx="0";
   }
+
+  getCssClassVal(num:any)
+  {
+    if(num<=10)
+    {
+      return 'primary';
+    }
+    else
+    {
+      return 'second';
+    }
+  }
+
 }
