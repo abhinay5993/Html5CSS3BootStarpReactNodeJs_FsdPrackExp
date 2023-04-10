@@ -9,14 +9,22 @@
 <body>
     <div align="center">
         <h3>HTML Forms & Select DropDowns</h3>
-        <form action="#" method="POST" target="_parent">
+        <form action="#" method="POST" target="_parent" enctype="multipart/form-data">
+            <fieldset>
+            <legend><strong>User Credetails</strong></legend>
             <label for="eml">Enter Email-Id:</label>
             <input type="email" id="eml" name="mailId">
+            <br><br>
+            <label for="age">Enter Your Age:</label>
+            <input pattern="\d*" title="Please Enter Number only" name="ageVal">
             <br><br>
             <label for="pass">Enter Password:</label>
             <input type="password" id="pass" name="pwd">
             <br><br>
-            <label for="course">Select Your Course :</label>
+            </fieldset>
+            <fieldset>
+            <legend>Curriculam Information</legend>
+            <label for="course"><b>Select Your Course :</b></label>
             <select name="course">
                 <option selected="selected" value="">Get Course</option>
                 <option value="B.C.A">B.C.A</option>
@@ -26,27 +34,46 @@
                 <option value="M.B.A">MBA</option>
             </select>
             <br><br>
-            <label>Select Course Type:</label>
+            <label><b>Select Course Type:</b></label>
+            <br><br>
             <input type="radio" name="Regular">
             <label for="Regular">Regular</label>
-            <br>
+            <br><br>
             <input type="radio" name="parttime">
             <label for="parttime">Part Time</label>
-            <br>
+            <br><br>
             <input type="radio" name="eve">
             <label for="eve">Evening</label>
             <br><br>
-            <label>Select Language Known:</label>
+            <label><strong>Select Language Known:</strong></label>
+            <br><br>
             <input type="checkbox" name="hin">
             <label for="hin">HINDI</label>
-            <br>
+            <br><br>
             <input type="checkbox" name="ben">
             <label for="ben">BENGALI</label>
-            <br>
+            <br><br>
             <input type="checkbox" name="tm">
             <label for="tm">Tamil</label>
             <br><br>
+            </fieldset>
+            <fieldset>
+                <legend><em>Section For Colour & Weekly,Date&Time Calender</em></legend>
+                <label for="colurDat">Choose Colour : </label>
+                <input type="color" name="colurDat">
+                <br><br>
+                <label for="wekCal"><strong> Select Week of Year(WithOur TimeZone): </strong></label>
+                <input type="week" name="wekCal">
+                <br><br>
+                <label for="locDateTime">Pick Your Date & Time : </label>
+                <input type="datetime-local" name="locDateTime">
+            </fieldset>
+            <fieldset>
+            <legend><strong><em>FORM DATA & UPLOAD FILE</em></strong></legend>
+            <input type="file" name="uploadFile">
+            <br><br>
             <input type="submit" value="LogIn">
+            </fieldset>
         </form>
     </div>
 </body>
