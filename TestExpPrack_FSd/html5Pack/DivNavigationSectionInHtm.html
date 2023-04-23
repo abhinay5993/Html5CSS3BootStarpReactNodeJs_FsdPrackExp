@@ -47,5 +47,42 @@
             reiciendis ex exercitationem ratione quasi assumenda omnis, velit dolorum officiis. Neque.
         </article>
     </section>
+    <br></br>
+    <fieldset>
+        <legend><strong>Play With HTML output tags</strong></legend>
+        <br></br>
+        <form id="sumFormId" oninput="sumVal.value=parseFloat(num1.value)+parseFloat(num2.value)">
+        <label for="num1">Enter Number 1 : </label>
+        <input type="number" name="num1" placeholder="first Number">
+        <p><b>Do SUM(+)</b></p>
+        <label for="num2">Enter Number 2 : </label>
+        <input type="number" name="num2" placeholder="second Number">
+        <br></br>
+        </form>
+    </fieldset>
+    <fieldset>
+        <legend><strong>Operation Results</strong></legend>
+        <p>
+            Value of SUM = 
+            <b><output name="sumVal" for="num1 num2" form="sumFormId"></output></b>
+        </p>
+        <p>
+            <h4>Play My Audio</h4>
+            <audio controls>
+                <source src="https://www.pagalworld.com.se/siteuploads/files/sfd132/65756/Tere%20Pyar%20Mein(PagalWorld.com.se).mp3" type="audio/mp3">
+            </audio>
+        </p>
+        <hr>
+        <p>
+            <h4>Progress Elements</h4>
+            <form oninput="progVal.value=parseFloat(num3.value)">
+            <label for="num3">Enter Value : </label>
+            <input type="number" name="num3" placeholder="enter value">
+            <br></br>
+            <progress max="100" name="progVal" value="parseFloat(num3.value)">
+            </progress>
+            </form>
+        </p>
+    </fieldset>
 </body>
 </html>
