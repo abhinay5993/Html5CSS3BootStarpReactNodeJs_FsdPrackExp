@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProgressBars,Meaters etc</title>
+</head>
+<body>
+    <fieldset style="width:600px;float:right;padding:10px;background-color: antiquewhite; color:black;">
+        <legend><strong>Play With Progress Bar</strong></legend>
+        <br></br>
+        <label for="pg1"><b><i>Loading Progress (with Fall back) : </i></b></label>
+        <progress max="100" value="40">
+            {{60/100}}
+        </progress>
+        <br></br>
+    </fieldset>
+    <br></br>
+    <fieldset style="width:900px;float:right;padding:15px;background-color: antiquewhite; color:black;">
+        <legend><strong>Meter Bar</strong></legend>
+        <br></br>
+        <label for="meet1"><b><i>Loading (with Fall back) : </i></b></label>
+        <meter max="100" min="10" low="30" high="70" optimum="85" value="25">
+            {{0/100}}
+        </meter>
+        <br></br>
+        <p>
+            <ul>
+                <li><b>Lower Part  :</b> value >= min && value <= Low  </li>
+                <li><b>Medium Part :</b> value >= Low && value <= High </li>
+                <li><b>Higher Part :</b> value >= max && value <= High</li>
+                <p><b><u>Using optimum attribute :</u></b><p>
+                <li><b>optimum is in Lower part :</b> Lower Range => Preferred,
+                    Medium Range => Average case ,
+                    Higher => wrost part
+                </li>
+                <li><b>optimum is in Medium :</b> Lower Range => Average case,
+                    Medium Range =>  Preferred Case,
+                    Higher => Average case
+                </li>
+                <li><b>optimum is in Higher :</b> Lower Range => wrost part,
+                    Medium Range =>  Average case,
+                    Higher => Preferred Case
+                </li>
+            </ul>
+        </p>
+    </fieldset>
+    <aside style="width:250px;height:800px;float:left;padding:10px;background-color: antiquewhite; color: blue;">
+        <h4>CSS Has to Apply</h4>
+        <p>
+            I am inside aside tag
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Harum, laborum eaque debitis quibusdam 
+            voluptatem esse architecto, eos, dolor placeat assumenda cumque vitae fuga laudantium modi? Ipsam 
+            laborum velit culpa laudantium?
+        </p>
+        <nav id="navBar">
+            <ul>
+                <li>DSA</li>
+                <li>Java</li>
+                <li>System design</li>
+                <li>Maven</li>
+            </ul>
+        </nav>
+    </aside>
+</body>
+</html>
