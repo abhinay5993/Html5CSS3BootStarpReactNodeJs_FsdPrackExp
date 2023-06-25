@@ -1,0 +1,98 @@
+JavaScript :
+============
+1) This question is just to check your knowledge about JavaScript Strings. In this question, the user will
+input a string and you need to do some manipulations on it to match the required output.
+HeyyeH
+We are here to playyalp ot ereh era eW38
+append the count
+
+2) In this question, the user will input a positive number and you need to find the lucky day of the
+week corresponding to that number
+0
+Monday
+1000%7
+6
+sunday
+
+3) print pascal Triangle.
+
+Topics for React:
+====================
+state management 
+useState, useEffect, useRef
+
+fetch / axios
+list ui using map
+props 
+event handlers like on click on change
+
+ES6:
+====
+fat arrow functions
+spread operator
+
+SQL Query:
+==========
+To see all users: 
+select user from mysql.user;
+
+Create a new user:
+create user nilesh;
+
+To give all privileges to a user:
+GRANT ALL PRIVILEGES ON * . * TO nilesh;
+
+To give specific privileges to a user
+GRANT CREATE, SELECT, INSERT ON * . * TO nilesh;
+
+to flush previligous immediatly:
+FLUSH PRIVILEGES;
+
+To see the existing privileges for the user:
+SHOW GRANTS for nilesh;
+
+To delete the user accounts from the database server completely:
+DROP USER nilesh;
+
+To get information of the current user by using the 
+user() or current_user()
+
+revoke:
+ REVOKE ALL, GRANT OPTION FROM nilesh;
+ 
+Bank database :
+Consider the following database maintained by a Bank. The Bank maintains information 
+about its branches, customers and their loan applications. 
+Following are the tables: 
+BRANCH (BID INTEGER, BRNAME CHAR (30), BRCITY CHAR (10)) 
+CUSTOMER (CNO INTEGER, CNAME CHAR (20), CADDR CHAR (35), CITY (20)) 
+LOAN_APPLICATION (LNO INTEGER, LAMTREQUIRED MONEY, LAMTAPPROVED 
+MONEY, L_DATE DATE) 
+The relationship is as follows: 
+BRANCH, CUSTOMER, LOAN_APPLICATION are related with ternary relationship. 
+TERNARY (BID INTEGER, CNO INTEGER, LNO INTEGER).
+
+Look for the Query:
+====================
+1. Select cname from customer, branch, ternary where customer.cid=ternary.cid and branch.bid=ternary.bid and br_name=”Pune”;
+2. List the names of the customers who have received loan less than their requirement.
+3. Find the maximum loan amount approved
+4. Find out the total loan amount sanctioned by “Deccan “branch. 
+5. Count the number of loan applications received by “M.G.ROAD” branch. 
+6. List the names of the customer along with the branch names who have applied for loan 
+in the month of September.
+
+=====
+Find the names of the customers for the “-------” branch.
+select cname,bname from customer,branch,loan,ternary
+where customer.cid=ternary.cid and branch.bid=ternary.bid and loan.lid=ternary.lid 
+and loan.l_date like "____-05-__";
+
+=====
+SELECT customer.CNAME, branch.BRNAME
+FROM customer, branch, ternary, loan_application
+WHERE branch.BID = ternary.BID
+AND ternary.CNO = customer.CNO
+AND ternary.LNO = loan_application.LNO
+AND MONTH(loan_application.L_DATE) = 9;
+

@@ -1,0 +1,72 @@
+body
+{
+    color:black;
+    background-color: lightgray;
+}
+h3 {
+    font-size: 20px;
+    font-family: "Helvetica Neue", Helvetica, Arial;
+    font-style: oblique;
+    color: #900;
+    text-align: center;
+    border-radius: 3px;
+    border-color: blue;
+    border-style: inset;
+    border-width: 4px;
+}
+svg
+{
+    font-size: 50px;
+    border-radius: 3px;
+    border-color:blueviolet;
+    border-style: ridge;
+    border-width: 4px;
+}
+p {
+    font-size: 25px;
+}
+
+.norm
+{
+    font-weight: normal;
+    border-left: 5px dotted green;
+    border-right: 7px solid blue;
+}
+
+.light
+{
+    font-weight: lighter;
+    border: 5px dashed red;
+}
+
+.thick
+{
+    font-weight: bold;
+    color: violet;
+    border-bottom: 7px dotted purple;
+}
+
+.thicker
+{
+    font-weight: 900;
+    color: rgb(50, 70, 90);
+    border-radius: 5px;
+    border-color:blue;
+    border-style: groove;
+    border-width: 4px;
+}
+
+#paraId
+{
+    border-style: solid dashed dotted double;
+    border-style: solid dotted double;
+    border-style: dotted ridge;
+}
+
+#secId1
+{
+   background-color: aqua;
+   padding: 5px 2px 3px 2px;
+   border: 30px groove yellow;
+   margin: 20px 80px 30px;
+}
