@@ -1,0 +1,59 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+}
+
+.master {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tab-container {
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.controls {
+    width: 100%;
+    display: flex;
+}
+
+button {
+    width: auto;
+    height: 40px;
+    border: 0.5;
+    padding: 10px;
+}
+
+.contents {
+    width: auto;
+    border-top: 0.5;
+    background-color: blueviolet;
+}
+
+.box1Cont,
+.box2Cont,
+.box3Cont {
+    width: 100%;
+    padding: 30px;
+    display: none;
+}
+
+p {
+    width: 100%;
+    color: white;
+}
+
+.activate {
+    display: block;
+}
+
+.tab-activate {
+    background-color: blueviolet;
+    color: white;
+}
