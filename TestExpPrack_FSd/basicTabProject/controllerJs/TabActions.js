@@ -39,3 +39,8 @@ btn3Tab.addEventListener("click",()=>{
     btn2Tab.classList.remove("tab-activate");
     btn3Tab.classList.add("tab-activate");
 });
+
+let btn4Tab=document.querySelector(".btn4Tab");
+btn4Tab.addEventListener("click",()=>{
+    window.location.href = './logIn/UserRegistration.html';
+});

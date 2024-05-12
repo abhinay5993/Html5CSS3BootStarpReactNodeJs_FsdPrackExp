@@ -1,0 +1,23 @@
+Todolist Instruction 
+
+Part 1
+Step 1: First, select all those IDs and classes which are important for targeting the elements.
+Step 2: Create an event listener, and whenever you press submit, the following tasks should be performed:
+i) Create an array and store all the errors within it, clearing the old errors.
+ii) Then, perform the validation check.
+
+  a . Ensure the username is at least 6 characters long
+  b . Ensure the password is at least 10 characters long
+  c . Ensure the password and confirmation password match
+  d . Ensure the terms checkbox is checked
+
+Step 3: If there are any errors, prevent the form from submitting! For this, you'll need to use preventDefault(). Look it up on Google to learn more about it.
+
+Part 2 - Show Errors
+Step 1: Add all errors inside the errors-list.
+Step 2: Add all errors inside "li" tags.
+Step 3: Add the show class inside the errors class in HTML.
+
+Part 3 - Clear Errors
+Step 1: Remove all "li" elements by looping through them (this might be a bit challenging).
+Step 2: Remove the show class from the errors div.
