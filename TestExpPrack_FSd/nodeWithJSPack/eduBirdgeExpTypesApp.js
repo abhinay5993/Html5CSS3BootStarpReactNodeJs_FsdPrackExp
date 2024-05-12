@@ -1,5 +1,5 @@
 "use strict";
-exports.__esModule = true;
+Object.defineProperty(exports, "__esModule", { value: true });
 function findMaxNum(num1, num2, num3) {
     var maxVal = (num1 > num2 && num1 > num3) ? num1 : (num2 > num3) ? num2 : num3;
     return maxVal;

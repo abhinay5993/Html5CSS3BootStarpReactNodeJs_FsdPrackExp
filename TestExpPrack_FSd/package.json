@@ -1,20 +1,22 @@
 {
   "name": "testexpprack_fsd",
   "version": "1.0.0",
-  "description": "This is fullstack nodeJs+with HTML.CSS projects",
+  "description": "",
   "main": "index.js",
+  "dependencies": {
+    "ansi-regex": "^4.1.1",
+    "prompt-sync": "^4.2.0",
+    "strip-ansi": "^5.2.0",
+    "typescript": "^5.3.3",
+    "undici-types": "^5.26.5"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [
-    "NodeJSprojects"
-  ],
-  "author": "abhinayl",
-  "license": "UNLICENSED",
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
   "devDependencies": {
-    "@types/node": "^18.16.3"
-  },
-  "dependencies": {
-    "prompt-sync": "^4.2.0"
+    "@types/node": "^20.10.6"
   }
 }
