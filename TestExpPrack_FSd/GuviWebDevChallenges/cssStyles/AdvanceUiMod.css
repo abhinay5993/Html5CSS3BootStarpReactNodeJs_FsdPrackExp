@@ -10,18 +10,37 @@ h1 {
 
 h3 {
     color:blue;
-    border: 3px solid;
+    border: 10px solid;
     border-color: brown;
-    border-width: 5px;
+    border-right-width: 50px;
     border-radius: 30px;
     margin: 30px;
     padding-top: 20px;
     padding-bottom: 20px;
     padding-left: 20px;
     padding-right: 5px;
+    text-align: center;
 }
 
 .xFrameCls {
     background-image: url('https://thumbs.dreamstime.com/b/android-os-logo-symbol-as-d-character-perspective-purple-background-android-green-robot-fan-art-ideal-wallpapers-editorial-173812156.jpg');
     background-size: cover;
+}
+
+.div1
+{
+    height: 40px;
+    max-width: 500px;
+    background-color: antiquewhite;
+    text-align: center;
+    font: caption;
+    font-size: 25px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-decoration: underline;
+    outline: 8px solid brown;
+}
+
+#img1Sec
+{
+    opacity: 0.4;
 }
