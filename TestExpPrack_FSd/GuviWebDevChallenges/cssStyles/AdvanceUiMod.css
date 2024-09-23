@@ -9,7 +9,7 @@ h1 {
 }
 
 h3 {
-    color:blue;
+    color: blue;
     border: 10px solid;
     border-color: brown;
     border-right-width: 50px;
@@ -27,8 +27,7 @@ h3 {
     background-size: cover;
 }
 
-.div1
-{
+.div1 {
     height: 40px;
     max-width: 500px;
     background-color: antiquewhite;
@@ -40,7 +39,46 @@ h3 {
     outline: 8px solid brown;
 }
 
-#img1Sec
-{
+#img1Sec {
     opacity: 0.4;
+}
+
+a {
+    color: black;
+    text-decoration: underline;
+}
+
+a:hover {
+    color: blueviolet;
+    text-decoration: underline;
+}
+
+a:active {
+    color: aqua;
+}
+
+a:visited {
+    color: yellow;
+    text-decoration: double;
+}
+
+.unOrdList1 {
+    list-style-type: square;
+    list-style-position: outside;
+}
+
+.ordList2 {
+    list-style-type: armenian;
+    list-style-position: inside;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 1;
+}
+
+th,
+td {
+    border: 2px solid blue;
+    padding: 5px;
 }
