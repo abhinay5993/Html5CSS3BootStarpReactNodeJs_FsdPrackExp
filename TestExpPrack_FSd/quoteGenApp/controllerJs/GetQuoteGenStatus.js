@@ -16,12 +16,12 @@ closeBtn.addEventListener("click", () => {
 });
 
 async function callToQuotesApi() {
-    let jsonResponseData = (await fetch("https://type.fit/api/quotes")).json();
+    let jsonResponseData = (await fetch("https://quotes-api-self.vercel.app/quote")).json();
     console.log(jsonResponseData);
     jsonResponseData.then((res) => {
-        let getRandNo = generateRandomNumber();
-        let textField = res[getRandNo].text;
-        let authorField = res[getRandNo].author;
+        //let getRandNo = generateRandomNumber();
+        let textField = res.quote;
+        let authorField = res.author;
         console.log(`Populated text : ${textField}`);
         console.log(`Populated author : ${authorField}`);
         quoteTxt.innerHTML = textField;
