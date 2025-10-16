@@ -1,0 +1,5 @@
+Strctured TypeScript Projects Commands & Configurations :
+==========================================================
+1. tsc --init --> To generate 'tsconfig.json' file.
+2. tsc <.ts-file> -w --> To Continuoulsy watch/Error checking for TS source code file.
+3. commenting & un-commenting properties of 'tsconfig.json' file is essential based on the requirement.
