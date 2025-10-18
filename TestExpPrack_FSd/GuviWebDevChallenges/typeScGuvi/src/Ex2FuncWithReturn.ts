@@ -1,5 +1,5 @@
 /**
- * User of simple arrow functions.
+ * Use of simple arrow functions.
  * 
  */
 type weekDayType=string|number;
