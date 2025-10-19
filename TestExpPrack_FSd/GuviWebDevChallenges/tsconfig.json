@@ -6,9 +6,10 @@
     "outDir": "./typeScGuvi/dist",
     // Environment Settings
     // See also https://aka.ms/tsconfig/module
-    "module": "es2020",
-    "moduleResolution": "bundler",
+    "module": "commonjs",
+    //"moduleResolution": "bundler",
     "target": "es2020",
+    "allowJs": true,
     // For nodejs:
     // "lib": ["esnext"],
     // "types": ["node"],
@@ -20,7 +21,7 @@
     //"declarationMap": true,
 
     // Stricter Typechecking Options
-    "noUncheckedIndexedAccess": true,
+    //"noUncheckedIndexedAccess": true,
     //"exactOptionalPropertyTypes": true,
 
     // Style Options

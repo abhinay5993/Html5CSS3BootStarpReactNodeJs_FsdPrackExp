@@ -1,4 +1,6 @@
 "use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.filterResut3 = exports.res1 = void 0;
 /**
  * string array literal diclarations
  *
@@ -18,8 +20,10 @@ strObjFoodArray.forEach((dataItems, indPosition) => console.log(dataItems + " <=
 console.log("\nCheck Element position : " + strObjFoodArray.findIndex(dataItems => dataItems === 'Corn'));
 console.log("******** Filtering Items ****************");
 let filterResut1 = strObjFoodArray.filter(dataItems => dataItems.includes("Ca"));
+exports.res1 = filterResut1;
 console.log("Filtered Result1 : " + filterResut1);
 let filterResut3 = strObjFoodArray.filter(dataItems => dataItems.startsWith("M"));
+exports.filterResut3 = filterResut3;
 console.log("Filtered Result3 : " + filterResut3);
 console.log("Using include function : " + strObjFoodArray.includes(""));
 console.log("Using include function2 : " + strObjFoodArray.includes("Idli"));

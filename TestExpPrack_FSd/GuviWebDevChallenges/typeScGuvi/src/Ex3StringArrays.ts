@@ -39,3 +39,5 @@ strRandomArray.forEach(dataItems=>{
     else
        console.log("Not a Number."); 
 });
+
+export { filterResut1 as res1,filterResut3 };

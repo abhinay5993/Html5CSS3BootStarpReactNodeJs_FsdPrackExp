@@ -27,3 +27,5 @@ stuObj.grade="A+";
 stuObj.rollNo=25;
 stuObj.stuName="Abhinay";
 console.log("\nObject With Optional Param : "+JSON.stringify(stuObj));
+
+export { stuObj };

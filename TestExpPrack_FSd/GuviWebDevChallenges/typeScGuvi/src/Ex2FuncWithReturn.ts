@@ -14,6 +14,7 @@ let weekDaysObj:any={
 }
 
 let resultIndex=(strInputWeek:string):weekDayType=>{
+    console.log("Will call this as Default Module..");
     return weekDaysObj[strInputWeek.toLowerCase().trim()];
 }
 console.log("\nThe Day number for the input WeekDay is : "+resultIndex('Wednesday')+"");
@@ -29,3 +30,5 @@ let sumOfInputArrayOfNumbers=(...args:number[]):number=>{
 console.log("\nSum of numbers Set1 : "+sumOfInputArrayOfNumbers(3,45,5,2,4,52,0,4,-4,2)+"");
 console.log("\nSum of numbers Set2 : "+sumOfInputArrayOfNumbers(1,2,3,4,5,6,7,8,9)+"");
 console.log("\nSum of numbers Set3 : "+sumOfInputArrayOfNumbers(0.5,5,5.004,34,45,-3.003)+"");
+
+export default resultIndex;

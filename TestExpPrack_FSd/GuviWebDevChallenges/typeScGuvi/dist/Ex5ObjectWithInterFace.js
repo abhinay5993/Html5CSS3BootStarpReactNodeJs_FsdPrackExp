@@ -1,4 +1,6 @@
 "use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.stuObj = void 0;
 let stuObj = {
     rollNo: 301,
     stuName: "Atif Aslam",
@@ -8,6 +10,7 @@ let stuObj = {
     },
     totalMarks: 0,
 };
+exports.stuObj = stuObj;
 console.log("\nComputed Marks : " + stuObj.getMarksCal(55, 34, 40, 90, 30));
 stuObj.totalMarks = stuObj.getMarksCal(55, 34, 40, 90, 30);
 console.log("\nObject without Optional Param : " + JSON.stringify(stuObj));
